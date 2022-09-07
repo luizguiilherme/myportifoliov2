@@ -1,0 +1,35 @@
+@import url(colors.css);
+.cabecalho {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  position: sticky;
+  top: auto;
+  background: rgba(30, 30, 30, 0.5);
+  
+}
+
+.img-logo {
+  height: 40px;
+  
+}
+
+.header-container {
+  display: flex;
+  gap: 1.5rem;
+  
+}
+
+.cabecalho-links {
+  font-family: var(--font-bebas);
+  color: var(--color-primary-yellow);
+  text-decoration: none;
+  font-size: 24px;
+  
+}
+
+.cabecalho-links:hover {
+  color: #E8F7FF;
+}

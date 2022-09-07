@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/header.css"> -->
+  <link rel="stylesheet" href="./css/headerv2.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/sobre.css">
+  <!-- <link rel="stylesheet" href="./css/projetos.css"> -->
+  <link rel="stylesheet" href="./css/projetosv2.css">
+  <link rel="stylesheet" href="./css/contato.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="./js/app.js" defer></script>
+  <script src="./js/projetos.js" defer></script>
+  <title>My Portifolio V2</title>
+</head>
+<body>
+    
+  <header>
+    <nav class="barradenavegacao">
+      <a href="#"><img class="navlogo" src="./img/logo.svg" alt=""></a>
+
+      <ul class="navmenu">
+        <li class="navitem">
+          <a href="#sobre">Sobre</a>
+        </li>
+
+        <li class="navitem">
+          <a href="#projetos">Projetos</a>
+
+        </li>
+
+        <li class="navitem">
+          <a href="#" class="dropmenucontatos">Contato</a>
+            
+          <div class="submenu">
+              
+            <div class="submenuitems">
+                <div class="submenuitem">
+                  <i><img src="./img/icons/github.svg" alt=""></i>
+                  <a href="https://github.com/luizguiilherme" target="_blank">GitHub</a>
+                </div>
+                
+                <div class="submenuitem">
+                  <i><img src="./img/icons/linkedin.svg" alt=""></i>
+                  <a href="https://www.linkedin.com/in/luiz-gui/" target="_blank">Linkedin</a>
+                </div>
+              </div>
+            
+            </div>
+        </li>
+
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- <header class="cabecalho home-bg">
+      <img class="img-logo" src="./img/logo.svg" alt="Logo LG code">
+      <nav class="header-container">
+        <a class="cabecalho-links" href="#sobre">Sobre</a>
+        <a class="cabecalho-links" href="#projetos">Projetos</a>
+        <a class="cabecalho-links" href="#contato">Contato</a>
+      </nav>
+    </header> -->
+
+    <main class="container">
+
+      <section class="home home-bg">
+        <div class="container-home">
+          <h3 class="text-home">Olá, me chamo </h3>
+          <h1 class="nome">Luiz Guilherme</h1>
+          <h3 class="text-home">Sou estudante de desenvolvimento front-end</h3>
+          <button class="btt-dw"><a href="./download/CV - Luiz Guilherme.pdf">Download CV</a></button>
+        </div>
+      </section>
+
+      <section id="sobre" class="sobre">
+        <div class="container-sobre">
+          <h2  class="sobre-titulo">Sobre</h2>
+          <p class="sobre-descricao">
+            Me chamo Luiz guilherme tenho 22 anos. Eu sempre gostei da area de densenvolvimento seja o front-end ou o back-end, mais confesso que o front-end é a minha paixão, atualmente eu tenho focado os meus estudos exclusivamente para ele, buscando sempre em aprimorar meus conhecimentos em JavaScript, HTML e CSS, comecei a estudar React recentemente o que tem me ajudado a ser mais produtivo, mais ainda tenho muita coisa para aprender.
+            
+            Atualmente estou buscando por uma vaga de desenvolvedor Front-End Junior
+            
+            Minhas principais linguangens são:
+            
+            >JavaScript    >HTML
+            > CSS               >React
+          </p>
+        </div>
+        <img class="img-eu" src="./img/me.svg" alt="Minha foto">
+      </section>
+      
+      <section id="projetos" class="projetos">
+        
+        <h1 class="titulo-projetos">Projetos</h1>
+        
+        <div class="container-projetos">
+       
+          <button type="button" class="control arrow-left"><img src="./img/icons/chevronleft.svg" alt="Seta para esquerda"></button>
+          <button type="button" class="control arrow-right"><img class="control" src="./img/icons/chevronright.svg" alt="Seta para a direita"></button>
+  
+          <div class="projetos-wrapper">
+           
+            <div class="cards">
+              
+              <a href="#" class="item current-item">
+                <img class="img-projeto" src="" alt="">
+                <h2 class="nome-projeto">nome projeto</h2>
+                <h3 class="descricao-projeto">1 - sadsadsadas</h3>
+              </a>
+  
+              <a href="#" class="item current-item">
+                <img class="img-projeto" src="" alt="">
+                <h2 class="nome-projeto">nome projeto</h2>
+                <h3 class="descricao-projeto">2 - sadsadsadas</h3>
+              </a>
+  
+              <a href="#" class="item current-item">
+                <img class="img-projeto" src="" alt="">
+                <h2 class="nome-projeto">nome projeto</h2>
+                <h3 class="descricao-projeto">3- sadsadsadas</h3>
+              </a>
+  
+              <a href="#" class="item current-item">
+                <img class="img-projeto" src="" alt="">
+                <h2 class="nome-projeto">nome projeto</h2>
+                <h3 class="descricao-projeto">4 - sadsadsadas</h3>
+              </a>
+  
+              <a href="#" class="item current-item">
+                <img class="img-projeto" src="" alt="">
+                <h2 class="nome-projeto">nome projeto</h2>
+                <h3 class="descricao-projeto">5- sadsadsadas</h3>
+              </a>
+            
+            </div>
+          
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- <h2 id="projetos" class="projetos-titulo">Projetos</h2>
+      <section  class="projetos">
+        <a href="#" class="projetos-card">
+          <img class="img-projeto" src="" alt="">
+          <h2 class="nome-projeto">nome projeto</h2>
+          <h3 class="descricao-projeto">sadsadsadas</h3>
+        </a>
+        <a href="#" class="projetos-card">
+          <img class="img-projeto" src="" alt="">
+          <h2 class="nome-projeto">nome projeto</h2>
+          <h3 class="descricao-projeto">sadsadsadas</h3>
+        </a>
+        <a href="#" class="projetos-card">
+          <img class="img-projeto" src="" alt="">
+          <h2 class="nome-projeto">nome projeto</h2>
+          <p class="descricao-projeto">asdasdasdasasdas</p>
+        </a>
+      </section> -->
+
+      <!-- <h2 id="contato" class="projetos-titulo">Contato</h2>
+      <section class="contato">
+        <img class="img-contato" src="./img/pana.svg" alt="">
+        
+        <div class="input-container">
+          <div class="input-grupo">
+         
+            <input type="text" id="name" required class="input-padrao">
+            <label for="name" class="input-label">Nome</label>
+          </div>
+          
+          <div class="input-grupo">
+            <input type="email" id="email" required class="input-padrao">
+            <label for="email" class="input-label"><span>Email</span></label>
+            
+          </div>
+  
+          <div class="input-grupo"> 
+            <textarea type="text" id="mensagem" required class="input-padrao"  cols="30" rows="10"></textarea>
+            <label for="mensagem" class="input-label">Conteudo</label>
+          </div>
+  
+        </div>
+        
+       
+
+      </section> -->
+    
+    </main>
+
+    <footer>
+
+               
+
+    </footer>
+
+  
+</body>
+</html>

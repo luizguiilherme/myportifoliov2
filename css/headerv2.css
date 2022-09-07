@@ -1,0 +1,82 @@
+@import url(colors.css);
+.barradenavegacao {
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem ;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.5);
+}
+
+.navlogo{
+  text-decoration: none;
+}
+
+.navmenu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navitem{
+  position: relative;
+}
+
+.navitem a{
+  text-decoration: none;
+  color: var(--color-primary-yellow);
+  font-size: 1.5rem;
+}
+
+.submenu{
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 15px);
+  max-width: max-content;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  transform: translateY(15%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.submenu.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.submenuitems {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+.submenuitem {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  cursor: pointer;
+
+}
+
+.submenuitem i img {
+  margin-right: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
+.submenuitem a {
+  font-size: 18px;
+  color: var(--color-primary-yellow);
+}
+
+.submenuitem:hover a{
+  color: #E8F7FF;
+}
+
+

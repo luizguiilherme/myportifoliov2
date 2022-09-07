@@ -1,0 +1,21 @@
+@import url(colors.css);
+.icons {
+  border-top: 1px solid #737477;
+  background-color: var(--color-secondary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 16px;
+  padding: 32px;
+}
+
+.link-icons {
+  display: flex;
+
+}
+
+.img-icons:hover {
+  color: #E8F7FF;
+}
+

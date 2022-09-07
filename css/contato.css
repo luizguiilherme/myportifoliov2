@@ -1,0 +1,101 @@
+@import url(colors.css);
+
+.contato {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.img-contato{
+  display: flex;
+  height: 444.05;
+  width: 468.67px;
+}
+
+.input-container{
+  display: flex;
+  gap: 45px;
+  flex-direction: column;
+}
+
+.input-grupo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-padrao{
+  width: 550px;
+  padding: 10px;
+  border:none;
+  border-radius: 8px;
+  font-family: var(--font-montserrat);
+  
+  background: transparent;
+  outline: 2px solid #fff; 
+}
+
+.input-mensagem{
+  width: 550px;
+  padding: 10px;
+  border:none;
+  border-radius: 8px;
+  
+  background: transparent;
+  outline: 2px solid #fff; 
+}
+
+.input-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(10px, 10px);
+  transform-origin: left;
+  transition: transform .25s;
+  color: #E8F7FF;
+
+}
+
+
+
+.input-padrao:focus+.input-label,.input-padrao:valid+.input-label{
+  transform: translate(0, -30px) scale(0.8);
+  color: var(--color-primary-yellow);
+}
+
+.input-padrao:is(:focus, :valid){
+  outline-color: var(--color-primary-yellow);
+}
+
+.btt-enviar {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  background-color: var(--color-primary-yellow);
+  color: #E8F7FF;
+  
+  padding: 15px 39px;
+  width: 184px;
+  height: 55px;
+  
+  border: none;         
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+
+  cursor: pointer;
+}
+
+.projetos-titulo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  font-size: 64px;
+  color: var(--color-primary-yellow);
+  font-family: 'Bebas Neue', cursive;
+  border-top: 2px solid red;
+  padding-top: 30px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  <title>My Portifolio V2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="My%20Portifolio%20V2_arquivos/css2.css" rel="stylesheet"><link rel="stylesheet" href="My%20Portifolio%20V2_arquivos/reset.css"><link rel="stylesheet" href="My%20Portifolio%20V2_arquivos/styles.css"><link rel="stylesheet" href="My%20Portifolio%20V2_arquivos/header.css"><link rel="stylesheet" href="My%20Portifolio%20V2_arquivos/home.css"><link rel="stylesheet" href="My%20Portifolio%20V2_arquivos/sobre.css"><link rel="stylesheet" href="My%20Portifolio%20V2_arquivos/projetos.css"></head>
+<body>
+    
+  <header class="cabecalho home-bg">
+      <img class="img-logo" src="My%20Portifolio%20V2_arquivos/logo.svg" alt="Logo LG code">
+      <nav class="header-container">
+        <a class="cabecalho-links" href="#sobre">Sobre</a>
+        <a class="cabecalho-links" href="#projetos">Projetos</a>
+        <a class="cabecalho-links" href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <section class="home home-bg">
+        <div class="container-home">
+          <h3 class="text-home">Olá, me chamo </h3>
+          <h1 class="nome">Luiz Guilherme</h1>
+          <h3 class="text-home">Sou estudante de desenvolvimento front-end</h3>
+          <button class="btt-dw">Download CV</button>
+        </div>
+      </section>
+
+      <section class="sobre">
+        <div class="container-sobre">
+          <h2 id="sobre" class="sobre-titulo">Sobre</h2>
+          <p class="sobre-descricao">
+            Me chamo Luiz guilherme tenho 22 anos. Eu sempre gostei da 
+area de densenvolvimento seja o front-end ou o back-end, mais confesso 
+que o front-end é a minha paixão, atualmente eu tenho focado os meus 
+estudos exclusivamente para ele, buscando sempre em aprimorar meus 
+conhecimentos em JavaScript, HTML e CSS, comecei a estudar React 
+recentemente o que tem me ajudado a ser mais produtivo, mais ainda tenho
+ muita coisa para aprender.
+            
+            Atualmente estou buscando por uma vaga de desenvolvedor 
+Front-End Junior
+            
+            Minhas principais linguangens são:
+            
+            &gt;JavaScript    &gt;HTML
+            &gt; CSS               &gt;React
+          </p>
+        </div>
+        <img class="img-eu" src="My%20Portifolio%20V2_arquivos/me.svg" alt="Minha foto">
+      </section>
+      
+      <section class="projetos">
+        <h2 class="projetos-titulo">Projetos</h2>
+        <a href="#" class="projetos-card">
+          <img class="img-projeto" src="" alt="">
+          <h2 class="nome-projeto">nome projeto</h2>
+          <h3 class="descricao-projeto">sadsadsadas</h3>
+        </a>
+        <a href="#" class="projetos-card">
+          <img class="img-projeto" src="" alt="">
+          <h2 class="nome-projeto">nome projeto</h2>
+          <h3 class="descricao-projeto">sadsadsadas</h3>
+        </a>
+        <a href="#" class="projetos-card">
+          <img class="img-projeto" src="" alt="">
+          <h2 class="nome-projeto">nome projeto</h2>
+          <p class="descricao-projeto">asdasdasdasasdas</p>
+        </a>
+      </section>
+
+      <section class="contatos">
+        <img class="img-contatos" src="" alt="">
+        <div>
+          <input class="input-padrao" type="text">
+          <input class="input-padrao" type="text">
+          <input class="descricao-msg" type="text">
+          <button class="btt-enviar"></button>
+        </div>
+      </section>
+    
+    </main>
+
+    <footer>
+
+    </footer>
+
+  
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
